@@ -1,0 +1,7 @@
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\bin\Hull.tsx
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\bin\src\right\rightconfig\MenuOrgPage\MenuOrgTable.tsx
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\bin\TypeScriptCore2015.Right.dll
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\bin\TypeScriptCore2015.Right.pdb
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\obj\Debug\TypeScriptCore2015.Right.dll
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\obj\Debug\TypeScriptCore2015.Right.pdb
+D:\AtawSources\Ataw.Platform\src\modules\TypeScript\bin\TypeScriptCore2015.Right.dll.config

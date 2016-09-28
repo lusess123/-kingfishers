@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{AC8BDFE9-52EF-4211-B891-D6B8302ABFEF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hull.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Hull.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\01core\0Dom.ts" />
+    <TypeScriptCompile Include="src\01core\AppConfig.tsx" />
+    <TypeScriptCompile Include="src\01core\Event.ts" />
+    <TypeScriptCompile Include="src\01core\Ioc.ts" />
+    <TypeScriptCompile Include="src\01core\post.ts" />
+    <TypeScriptCompile Include="src\01core\RQuery.tsx" />
+    <TypeScriptCompile Include="src\01core\Screen.ts" />
+    <TypeScriptCompile Include="src\01core\Url.ts" />
+    <TypeScriptCompile Include="src\01core\Util.ts" />
+    <TypeScriptCompile Include="src\02col\00core\baseCol.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Amount.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\AmountDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Date.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DateTime.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Detail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DetailArea.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DetailDate.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DownLink.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Editor.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\FileDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Hidden.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\ImageDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Link.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Password.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\PCAS.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Radio.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\StarScore.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Text.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\TextArea.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Time.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\CheckBox.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\Combo.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\Listbox.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\SingleCheckBox.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\BaseTree.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\BaseTreeSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormMulitSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormSingleSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\MomeryControl.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\Mulselector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\selector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\TreeMultiSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\TreeSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseFileUploa.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseShowItem.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseUpload.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\FileShowItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImagePreviewShow.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImageShowItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImageSizeItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\MultiFileUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\MultiImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\SingleFileUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\SingleImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\ThumbnailItem.tsx" />
+    <TypeScriptCompile Include="src\02col\05composite\TwoColumns.tsx" />
+    <TypeScriptCompile Include="src\02col\05composite\TwoColumnsDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\06Navi\CheckBoxNavi.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseColumn.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseForm.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BasePage.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseRow.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseColMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseSelectMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\CheckBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\ComboMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\DetailMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\ListBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MomeryControlMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MulselectorMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MultiFileUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MultiImageUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\NormalRowGroupMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\RadioMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SelectMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SingleFileUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SingleImageUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\StarScoreMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\TreeSelectorMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\RowHand.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridColumn.ts" />
+    <TypeScriptCompile Include="src\03form\Grid\GridColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridForm.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridRow.tsx" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalColumn.tsx" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalForm.ts" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalRow.ts" />
+    <TypeScriptCompile Include="src\04page\BaseWebPage.ts" />
+    <TypeScriptCompile Include="src\04page\DetailPage.tsx" />
+    <TypeScriptCompile Include="src\04page\IframePage.tsx" />
+    <TypeScriptCompile Include="src\04page\InsertPage.tsx" />
+    <TypeScriptCompile Include="src\04page\ListPage.tsx" />
+    <TypeScriptCompile Include="src\04page\List\ListNaviDom.tsx" />
+    <TypeScriptCompile Include="src\04page\List\ListNaviItemDom.tsx" />
+    <TypeScriptCompile Include="src\04page\Page.ts" />
+    <TypeScriptCompile Include="src\04page\UpdatePage.tsx" />
+    <TypeScriptCompile Include="src\04page\ViewModulePage.tsx" />
+    <TypeScriptCompile Include="src\04page\Viewpage.ts" />
+    <TypeScriptCompile Include="src\04page\WinPage.ts" />
+    <TypeScriptCompile Include="src\05tool\AkTest.tsx" />
+    <TypeScriptCompile Include="src\05tool\ALink.tsx" />
+    <TypeScriptCompile Include="src\05tool\Button.tsx" />
+    <TypeScriptCompile Include="src\05tool\EditSpan.tsx" />
+    <TypeScriptCompile Include="src\05tool\Pagination.tsx" />
+    <TypeScriptCompile Include="src\05tool\PicPreView.tsx" />
+    <TypeScriptCompile Include="src\05tool\TabDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\TestForm.ts" />
+    <TypeScriptCompile Include="src\05tool\Timer.tsx" />
+    <TypeScriptCompile Include="src\05tool\Tree.tsx" />
+    <TypeScriptCompile Include="src\05tool\XScroll.tsx" />
+    <TypeScriptCompile Include="src\06app\dev\IIsSitePage.tsx" />
+    <TypeScriptCompile Include="src\06app\dev\WebConfigFilePage.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\Door.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\FeedPage.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\Day.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\Feed.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\New.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkBench.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\MyWorkflowDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\WorkflowDefDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\WorkflowMsgDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Pwd\ChangePWD.tsx" />
+    <TypeScriptCompile Include="src\06app\SDK\AllColPage.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Data.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Feed.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\New.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Test.tsx" />
+    <TypeScriptCompile Include="src\06app\SocketIo\NewCircleDom.tsx" />
+    <TypeScriptCompile Include="src\06app\SocketIo\NodeClient.tsx" />
+    <TypeScriptCompile Include="src\06app\TreeTest\TreeTest.tsx" />
+    <TypeScriptCompile Include="src\06app\TreeTest\TreeTestPage.tsx" />
+    <TypeScriptCompile Include="src\06app\UserDetail\UserDetail.tsx" />
+    <TypeScriptCompile Include="src\06app\Web\Header.tsx" />
+    <TypeScriptCompile Include="src\06app\Web\Hull.tsx" />
+    <TypeScriptCompile Include="src\07data\data.tsx" />
+    <TypeScriptCompile Include="src\07data\FormView.ts" />
+    <TypeScriptCompile Include="src\07data\Kv.ts" />
+    <TypeScriptCompile Include="src\07data\PageView.ts" />
+    <TypeScriptCompile Include="src\08legal\BaseLegal.ts" />
+    <TypeScriptCompile Include="src\08legal\TextLegal.ts" />
+    <TypeScriptCompile Include="src\09Web\BaseStage.tsx" />
+    <TypeScriptCompile Include="src\09Web\dom\ThDom.tsx" />
+    <TypeScriptCompile Include="src\09Web\HomeStage.tsx" />
+    <TypeScriptCompile Include="src\09Web\Master.tsx" />
+    <TypeScriptCompile Include="src\09Web\Table.tsx" />
+    <TypeScriptCompile Include="src\09Web\TableDemo.tsx" />
+    <TypeScriptCompile Include="src\10Sea\AkJs.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\AkBase.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\IPage.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\Reus.tsx" />
+    <TypeScriptCompile Include="src\10Sea\Routes.tsx" />
+    <TypeScriptCompile Include="src\10Sea\sea.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppMainController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppLayOut.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppMenu.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppUrl.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\BasePageCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\BasePageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\CenterInfo\CenterInfoMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\WebPageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingPurchase\WinInvoicingPurchaseMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingPurchase\WinInvoicingPurchaseRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingReturnStor\WinInvoicingReturnStormrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingReturnStor\WinInvoicingReturnStorRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingSell\WinInvoicingSellMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingSell\WinInvoicingSellRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpinit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\UserDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todocer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todomer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todomrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todorer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\win\WinWorkflowGuideMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\win\WinWorkflowGuideRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\win\WinWorkflowMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\win\WinWorkflowRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowRer.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDDetailRowDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDMasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDPage.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDRowDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\BaseListPage.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\LeftNaviDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\SearchFormDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\TableDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\RightNormalColumDom.tsx" />
+    <TypeScriptCompile Include="src\right\bd_PayInfoPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Data.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\GroupDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGrantPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupListPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupRightDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\CustomColPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\cxjTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HContacts.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkBenchPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkFlowItemPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkNewMsg.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\atawPlatformPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\component\headListMenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\content.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\leftmenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\main.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\main_table.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\shortCut.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\table.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\hdzTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\head.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\head_right.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_makeup.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_title.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_topbar.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\ApplicationPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\DBPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\FileMConfigPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\MvcConfigPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\XMLPanelPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\MenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\MenuUserPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewButtonPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewCollectPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewMenuPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewNodePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewOrgPageS.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewUserPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewUserRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\rightPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\RoleTr.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\MenuOrg.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\MenuOrgTable.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgTrailReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\smmTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\sq\sqTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\BookMark.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgEdit.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgMenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgTree.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\Reveal.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\UserMenuRole.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\grouptreeSava\GroupSavePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\WmhTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\RightReact\UserRoleHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\RightReact\UserRoleReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\UserRole.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\UserRoleTable.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\zhmTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\zyk\zykTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Data.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\MenuDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuListPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\org\Detail\OrgDetailMasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\org\Detail\OrgDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\org\List\OrgListPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightApp.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\GroupOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\Save\GroupSavePage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MainDom.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrg.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrgTable.tsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenuPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgTrailReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\MenuUserRole.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\MenuUserRoleTable.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\Popup\AddMenuorButtonPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleButton.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuUserHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuUserReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\RightlinkPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\RightMainPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Data.tsx" />
+    <TypeScriptCompile Include="src\right\role\detail\RoleDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\role\new\RoleInsertRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\new\RoleNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGrantPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleListPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleRightDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Update\RoleUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Update\RoleUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\data.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\UserDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserInsertRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserInfoGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserInfoPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\BatchRole\UserManageBatchRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\RoleDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\UserManageDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserManagerUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserManageUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserRoleDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManagePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserRightDetailPage.tsx" />
+    <TypeScriptCompile Include="Typings\0Type\Data.d.ts" />
+    <TypeScriptCompile Include="Typings\0Type\Entity.ts" />
+    <TypeScriptCompile Include="Typings\0Type\Type.d.ts" />
+    <TypeScriptCompile Include="Typings\eventemitter2\eventemitter2.d.ts" />
+    <TypeScriptCompile Include="Typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Typings\react\react-dom.d.ts" />
+    <TypeScriptCompile Include="Typings\react\react.d.ts" />
+    <TypeScriptCompile Include="Typings\require\require.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\10Sea\webApp\CenterInfo\Activity\" />
+    <Folder Include="src\10Sea\webApp\CenterInfo\Publish\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TypeScriptCore2015</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12721</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12721/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>bin</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <OutputPath>..\..\..\..\Products\_output\Web\Ataw.WebSite\ts\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)bin\*.*" "$(TargetDir)..\..\..\..\..\Products\_output\Web\Ataw.WebSite\ts" /S  /C /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>

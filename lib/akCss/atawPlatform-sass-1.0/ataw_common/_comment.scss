@@ -1,0 +1,71 @@
+﻿    .Hu-content {
+        margin-top:1rem;
+        textarea{
+            float: left;
+            height: 1.75rem;
+            border: 1px solid $com-color;
+            border-radius: 0.2rem;
+        }
+        
+    }
+
+    .Hu-publish {
+        margin-left:.5rem;
+        line-height: 2;
+        span{
+            color:$com-color;
+            
+        }
+        a{
+            float:right;
+            color:$white !important;
+            background: $com-color;
+            border: 1px solid $com-color;
+        }
+        .qqFace{
+            border:1px solid #ddd;
+            background:$white;}
+    }
+
+    .Hm-comment-list {
+        margin-top:1rem;
+        a{ color:$com-color;}          
+                
+    }
+
+    .Hm-item {
+        position: relative;
+        padding: 1rem 0 .5rem 0;
+        border-bottom: 1px dashed #bbb;
+
+        .Hu-head-img {
+            position: absolute;
+            top: 1.2rem;
+
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+
+        .Hu-comment-detail {
+            padding-left: 3rem;
+            span{ color:#999;}
+            &>div:nth-child(3){
+                a{ color:$com-detail-a-color;}
+            }
+            &>div:nth-child(5){
+                p{
+                    margin-bottom:0 !important;
+                    span:nth-child(2){ margin:0 .5rem;}
+                    a:last-child{
+                        display:none;
+                        color: $com-detail-a-color;
+                         }
+                    &:hover{ a:last-child{ display:inline-block ;}}
+                }
+                span{ color:#555;}
+            }
+        }
+    }

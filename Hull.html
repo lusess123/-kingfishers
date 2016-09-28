@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>react + typescript</title>
+    <link href="lib/akCss/reset.css" rel="stylesheet" />
+    <script src="lib/foundation/js/vendor/modernizr.js"></script>
+    <link href="lib/foundation/css/foundation.min.css" rel="stylesheet" />
+    <!--<link href="/lib/akCss/atawPlatform-sass-1.0/scss/atawStyle-reboot.css" rel="stylesheet" />
+    <link href="/lib/akCss/atawPlatform-sass-1.0/atawPlatform.css" rel="stylesheet" />-->
+    <link href="lib/font-awesome/font-awesome.css" rel="stylesheet" />
+    <link href="lib/akCss/animate.css" rel="stylesheet" />
+    <link href="lib/akCss/acsControls.css" rel="stylesheet" />
+</head>
+<body class=" acsScrollBody  ">
+    <div class="acsLoadingPanel acsTextC  " id="ACT-Loading">
+        <span class="acsLoading">
+            <span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span><span class="bounce4"></span><span class="bounce5"></span>
+        </span>
+        <span class="acsLoadingText">正在加载，请稍后...</span>
+    </div>
+    <div id="ACT-DIV-SHELL">
+       
+    </div>
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/jquery/jquery-migrate-1.2.1.js"></script>
+    <script src="lib/jquery/json.js"></script>
+    <script src="lib/react/react.js"></script>
+    <script src="lib/react/react-with-addons.js"></script>
+    <!--<script src="lib/react/ReactRouter.js"></script>-->
+    <script src="lib/EventEmitter2/eventemitter2.js"></script>
+    <script src="lib/flux/Flux.js"></script>
+    <script src="lib/require/require.js" data-main="Hull"></script>
+    <script src="lib/require/css.js"></script>
+    <script src="lib/jquery/jquery.jsonp.js"></script>
+    <!--<script src="lib/Classical/classical.js"></script>-->
+    <script src="lib/finch/finch.min.js"></script>
+    <script>
+        //Core.Util.ToggleLoading(true);
+        //$("#dvH1").html((navigator.userAgent.toLowerCase()));
+        //$(document).foundation();
+
+    </script>
+</body>
+<style>
+    .acsLoadingPanel {
+        display: none;
+    }
+
+    .table-overflow {
+        width: -webkit-calc(100% - 30px);
+        width: calc(100% - 30px);
+        margin: .5rem auto;
+        overflow: auto;
+    }
+
+    table {
+        width: 100%;
+        overflow: auto;
+    }
+
+    .w110 {
+        width: 110%;
+    }
+
+    table tr {
+        white-space: nowrap;
+    }
+
+    table th {
+        position: relative;
+        font-weight: bold;
+    }
+
+        table th > .handle {
+            display: block;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 1rem;
+            height: 2.3125rem;
+        }
+
+            table th > .handle:hover {
+                cursor: ew-resize;
+            }
+
+    .text-overflow {
+        width: 3.125rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .east-btn-blue {
+        padding: .3rem .625rem;
+        font-size: .75rem;
+        border: 1px solid #78bcfd;
+        color: #78bcfd;
+        background: transparent;
+        border-radius: .1875rem;
+    }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .east-grid-header {
+        height: 2.5rem;
+        line-height: 1.5rem;
+        padding: .5rem .925rem;
+        margin-left: 0;
+        background-color: #f3f7f9;
+        border-top: 1px solid #e4eaec;
+        font-size: .75rem;
+        box-sizing: border-box;
+    }
+
+        .east-grid-header .button {
+            margin-bottom: 0;
+            background-color: #fff;
+        }
+
+            .east-grid-header .button i {
+                margin-right: .3125rem;
+            }
+
+        .east-grid-header .button-group {
+            margin-left: .625rem;
+        }
+
+    .button-group .button:not(:last-child) {
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .button-group .button:not(:first-child) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+</style>
+
+</html>

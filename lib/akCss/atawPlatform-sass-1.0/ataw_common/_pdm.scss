@@ -1,0 +1,17 @@
+﻿.Hm-pdm {
+    .panel-success {
+        border-color: #d0e9c6 !important;
+    }       
+     .panel-body {
+         li {
+             u,span:not(first-child) {
+                  margin-left: 1rem;
+             }
+             span:first-child {
+                 display: inline-block;
+                 width: 35%;
+             }
+         }
+    }
+
+}

@@ -1,0 +1,1135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{B4F3647A-A950-4EEB-90B9-15415F52C7C1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="build.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\acsControls.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\atawPlatform.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\b4-reboot.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\bootstrap.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\yuShu_b4-reboot.css" />
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuHosStyle.css" />
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuHos_atawPlatform.css" />
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuStyle.css" />
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShu_atawPlatform.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform.css" />
+    <Content Include="lib\akCss\eastStyle.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\animate.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\19.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\9.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\cover.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\platform\log-list.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\platform\log-new.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\platform\log-older.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\rocket.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\rocket_button_up.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\user.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\images\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\reset.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\rightCloud.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\rocket.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\bootstrap\bootstrap-theme.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\bootstrap\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\bootstrap\v4\bootstrap.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Date\date.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\EventEmitter2\eventemitter2.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\finch\finch.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\font-awesome\font-awesome.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\css\foundation.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\css\foundation.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\app.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\foundation.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\foundation.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\jquery.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\newPlatform.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation6\js\what-input.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\css\foundation-datepicker.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\css\foundation-icons.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\css\foundation.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\css\foundation.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\css\normalize.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\fonts\foundation-icons.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\foundation-datepicker.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\foundation.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\vendor\fastclick.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\vendor\jquery.cookie.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\vendor\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\vendor\modernizr.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\js\vendor\placeholder.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery-1.9.0.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery-2.0.0.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery-2.2.2.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery-migrate-1.2.1.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\jquery.jsonp.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\jquery\json.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\react\react-dom.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\react\react-dom.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\react\react.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\react\react.min.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\require\css.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\require\require.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="r.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hull.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <TypeScriptCompile Include="src\02col\03selector\PickSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\PickSingleSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\06Navi\CheckBoxNavi.tsx" />
+    <TypeScriptCompile Include="src\04page\List\ListNaviDom.tsx" />
+    <TypeScriptCompile Include="src\04page\List\ListNaviItemDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\BreadDom\BreadDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\BreadDom\BreadItemDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\KityMinder\KityMinderDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\Modal\ModalDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\MonacoEditor\MonacoEditor.tsx" />
+    <TypeScriptCompile Include="src\05tool\Picker\PickDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\Picker\PickerContainer.tsx" />
+    <TypeScriptCompile Include="src\05tool\Picker\PickItemDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\Picker\PickListBaseDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\Picker\PickProtalBaseDom.tsx" />
+    <TypeScriptCompile Include="src\05tool\PicPreView.tsx" />
+    <TypeScriptCompile Include="src\05tool\TabDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\Door.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\FeedPage.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkBench.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\WorkflowDefDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\MyWorkflowDom.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\WorkflowItem\WorkflowMsgDom.tsx" />
+    <TypeScriptCompile Include="src\06app\SDK\Doc\DbDevDocPage.tsx" />
+    <TypeScriptCompile Include="src\06app\SDK\Doc\FrontDevDocPage.tsx" />
+    <TypeScriptCompile Include="src\06app\SDK\Doc\UpdatelogPage.tsx" />
+    <TypeScriptCompile Include="src\06app\SocketIo\NewCircleDom.tsx" />
+    <TypeScriptCompile Include="src\06app\SocketIo\NodeClient.tsx" />
+    <TypeScriptCompile Include="src\06app\TreeTest\TreeTestPage.tsx" />
+    <Content Include="TypeScriptH.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\foundation\img\.gitkeep" />
+    <Content Include="lib\foundation\fonts\foundation-icons.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\fonts\foundation-icons.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\foundation\fonts\foundation-icons.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\font-awesome\fontawesome-webfont.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\font-awesome\fontawesome-webfont.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\font-awesome\fontawesome-webfont.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\font-awesome\FontAwesome.otf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\rightCloud.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\acsControls.scss" />
+    <Content Include="lib\akCss\atawPlatform.scss" />
+    <Content Include="lib\akCss\common.scss" />
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\atawPlatform.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\bootstrap-flex.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\bootstrap-grid.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\bootstrap-reboot.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\bootstrap.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_alert.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_background-variant.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_border-radius.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_breakpoints.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_buttons.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_center-block.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_clearfix.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_forms.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_gradients.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_grid-framework.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_grid.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_hide-text.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_hover.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_image.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_label.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_list-group.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_nav-divider.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_navbar-align.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_pagination.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_progress.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_pulls.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_reset-filter.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_reset-text.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_resize.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_responsive-visibility.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_screen-reader.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_size.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_tab-focus.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_table-row.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_text-emphasis.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_text-truncate.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_alert.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_animation.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_breadcrumb.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_button-group.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_buttons.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_card.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_carousel.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_close.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_code.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_custom-forms.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_custom-mixins.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_custom-veriables.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_dropdown.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_forms.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_grid.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_images.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_input-group.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_jumbotron.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_labels.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_list-group.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_media.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_mixins.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_modal.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_nav.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_navbar.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_normalize.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_pager.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_pagination.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_popover.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_print.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_progress.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_reboot.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_responsive-embed.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_tables.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_tooltip.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_type.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_utilities-responsive.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_utilities-spacing.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_utilities.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_variables.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\10Sea\webApp\CenterInfo\Activity\" />
+    <Folder Include="src\10Sea\webApp\CenterInfo\Publish\" />
+    <Folder Include="src\Medical\Base\ExamItemCategory\" />
+    <Folder Include="src\Medical\Base\User\" />
+    <Folder Include="src\right\H\sq\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Hull.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\01core\0Dom.ts">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\01core\Event.ts" />
+    <TypeScriptCompile Include="src\01core\Ioc.ts" />
+    <TypeScriptCompile Include="src\01core\post.ts" />
+    <TypeScriptCompile Include="src\01core\RQuery.tsx" />
+    <TypeScriptCompile Include="src\01core\Screen.ts" />
+    <TypeScriptCompile Include="src\01core\Url.ts" />
+    <TypeScriptCompile Include="src\01core\Util.ts" />
+    <TypeScriptCompile Include="src\02col\00core\baseCol.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Amount.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\AmountDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Date.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DateTime.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Detail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DetailArea.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DetailDate.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\DownLink.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Editor.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\FileDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Hidden.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\ImageDetail.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Link.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Password.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\PCAS.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Radio.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\StarScore.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Text.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\TextArea.tsx" />
+    <TypeScriptCompile Include="src\02col\01single\Time.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\CheckBox.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\Combo.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\Listbox.tsx" />
+    <TypeScriptCompile Include="src\02col\02Mulite\SingleCheckBox.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\BaseTree.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\BaseTreeSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormMulitSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\FormSingleSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\MomeryControl.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\Mulselector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\selector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\TreeMultiSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\03selector\TreeSelector.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseFileUploa.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseShowItem.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\BaseUpload.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\FileShowItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImagePreviewShow.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImageShowItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\ImageSizeItem.tsx" />
+    <TypeScriptCompile Include="src\02col\04upload\MultiFileUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\MultiImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\SingleFileUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\SingleImageUpload.ts" />
+    <TypeScriptCompile Include="src\02col\04upload\ThumbnailItem.tsx" />
+    <TypeScriptCompile Include="src\02col\05composite\TwoColumns.tsx" />
+    <TypeScriptCompile Include="src\02col\05composite\TwoColumnsDetail.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseColumn.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseForm.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BasePage.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseRow.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseColMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\BaseColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseSelectMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\BaseUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\CheckBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\DetailMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\ComboMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\ListBoxMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MomeryControlMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MulselectorMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MultiFileUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\MultiImageUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\NormalRowGroupMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\RadioMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SelectMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SingleFileUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\SingleImageUploadMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\StarScoreMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\col\TreeSelectorMaker.tsx" />
+    <TypeScriptCompile Include="src\03form\Base\RowHand.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridColumn.ts" />
+    <TypeScriptCompile Include="src\03form\Grid\GridColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridForm.tsx" />
+    <TypeScriptCompile Include="src\03form\Grid\GridRow.tsx" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalColumn.tsx" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalForm.ts" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalRow.ts" />
+    <TypeScriptCompile Include="src\03form\Norml\NormalColumnGroup.tsx" />
+    <TypeScriptCompile Include="src\04page\BaseWebPage.ts" />
+    <TypeScriptCompile Include="src\04page\DetailPage.tsx" />
+    <TypeScriptCompile Include="src\04page\IframePage.tsx" />
+    <TypeScriptCompile Include="src\04page\InsertPage.tsx" />
+    <TypeScriptCompile Include="src\04page\ListPage.tsx" />
+    <TypeScriptCompile Include="src\04page\Page.ts" />
+    <TypeScriptCompile Include="src\04page\UpdatePage.tsx" />
+    <TypeScriptCompile Include="src\04page\Viewpage.ts" />
+    <TypeScriptCompile Include="src\04page\WinPage.ts" />
+    <TypeScriptCompile Include="src\05tool\AkTest.tsx" />
+    <TypeScriptCompile Include="src\05tool\ALink.tsx" />
+    <TypeScriptCompile Include="src\05tool\Button.tsx" />
+    <TypeScriptCompile Include="src\05tool\EditSpan.tsx" />
+    <TypeScriptCompile Include="src\05tool\Pagination.tsx" />
+    <TypeScriptCompile Include="src\05tool\TestForm.ts" />
+    <TypeScriptCompile Include="src\05tool\Timer.tsx" />
+    <TypeScriptCompile Include="src\05tool\Tree.tsx" />
+    <TypeScriptCompile Include="src\05tool\XScroll.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\Day.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\Feed.tsx" />
+    <TypeScriptCompile Include="src\06app\Feed\WorkBench\Feed\New.tsx" />
+    <TypeScriptCompile Include="src\06app\Pwd\ChangePWD.tsx" />
+    <TypeScriptCompile Include="src\06app\SDK\AllColPage.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Data.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Test.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\Feed.tsx" />
+    <TypeScriptCompile Include="src\06app\Sns\New.tsx" />
+    <TypeScriptCompile Include="src\06app\TreeTest\TreeTest.tsx" />
+    <TypeScriptCompile Include="src\06app\UserDetail\UserDetail.tsx" />
+    <TypeScriptCompile Include="src\06app\Web\DevMenu.tsx" />
+    <TypeScriptCompile Include="src\06app\Web\Header.tsx" />
+    <TypeScriptCompile Include="src\06app\Web\Hull.tsx" />
+    <TypeScriptCompile Include="src\07data\FormView.ts" />
+    <TypeScriptCompile Include="src\07data\Kv.ts" />
+    <TypeScriptCompile Include="src\07data\PageView.ts" />
+    <TypeScriptCompile Include="src\08legal\BaseLegal.ts" />
+    <TypeScriptCompile Include="src\08legal\TextLegal.ts" />
+    <TypeScriptCompile Include="src\09Web\BaseStage.tsx" />
+    <TypeScriptCompile Include="src\09Web\dom\ThDom.tsx" />
+    <TypeScriptCompile Include="src\09Web\HomeStage.tsx" />
+    <TypeScriptCompile Include="src\09Web\Master.tsx" />
+    <TypeScriptCompile Include="src\09Web\Table.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\09Web\TableDemo.tsx" />
+    <TypeScriptCompile Include="src\07data\data.tsx" />
+    <TypeScriptCompile Include="src\10Sea\AkJs.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\AkBase.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\IPage.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkBaseRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\core\mcrv\AkMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\Reus.tsx" />
+    <TypeScriptCompile Include="src\10Sea\Routes.tsx" />
+    <TypeScriptCompile Include="src\10Sea\sea.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Activity\ActivityRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppMainController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\AppRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppLayOut.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppMenu.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\App\cer\AppUrl.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\BasePageCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\BasePageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\CenterInfo\CenterInfoMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\DefaultRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\default\win\WinDefaultRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\TsRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\ts\WebPageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\ViewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Default\view\win\WinViewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Desk\DeskRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\DocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentCenter\documentPage\AKDocumentPageRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\comment\AKCommentRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\DocumentComment\DocumentCommentRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Iframe\IframeRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\BaseInvoicing\BaseInvoicingRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingPurchase\WinInvoicingPurchaseMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingPurchase\WinInvoicingPurchaseRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingReturnStor\WinInvoicingReturnStormrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingReturnStor\WinInvoicingReturnStorRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingSell\WinInvoicingSellMrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Invoicing\InvoicingSell\WinInvoicingSellRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\InBox\InBoxRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\mail\insertmail\insertmailRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Menu\MenuRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MessAge\messageRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\MyWork\MyWorkRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpinit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\AKPageHelp\AKPageHelpRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PageHelp\PageHelpRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Part\PartRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\PersonSet\PersonSetRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Publisher\PublisherRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\RecyleDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\RecyleDocumentCenter\UserDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Review\ReviewRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageController.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageInit.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageModel.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageMRCCreator.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\sysdocumentPage\AKDocumentPageRenderer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\SystemDocumentCenter\SystemDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Test\TestRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todocer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todomer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todomrc.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\todo\todorer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserDocumentCenter\UserDocumentCenterRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\UserHome\UserHomeRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\win\WinWorkflowGuideMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\win\WinWorkflowGuideRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\WorkflowGuide\WorkflowGuideRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\win\WinWorkflowMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\win\WinWorkflowRer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowCer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowMer.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowMRC.tsx" />
+    <TypeScriptCompile Include="src\10Sea\webApp\Workflow\WorkflowRer.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\Department\List\DepartRowButtonDom.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\Department\List\DepartGirdFormDom.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\Department\List\DepartGridRowDom.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\Department\List\DepartListPage.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\Department\List\DepartmentSearchFormDom.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\ExamItem\Data.tsx" />
+    <TypeScriptCompile Include="src\Medical\Base\ExamItem\List\ExamItemListPage.tsx" />
+    <TypeScriptCompile Include="src\Medical\Common\RowButtonExpandDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDDetailRowDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDMasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDPage.tsx" />
+    <TypeScriptCompile Include="src\right\Base\BaseMDRowDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\BaseListPage.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\LeftNaviDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\SearchFormDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\List\TableDom.tsx" />
+    <TypeScriptCompile Include="src\right\Base\RightNormalColumDom.tsx" />
+    <TypeScriptCompile Include="src\right\bd_PayInfoPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Data.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\GroupDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\group\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGrantPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupListPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\GroupRightDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\group\New\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\group\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\group\Update\GroupUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\CustomColPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\cxjTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HContacts.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkBenchPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkFlowItemPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\cxj\HWorkNewMsg.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\atawPlatformPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\component\headListMenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\content.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\leftmenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\main.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\main_table.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\shortCut.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\content\table.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\hdzTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\head.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\head_right.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_makeup.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_title.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\head\_topbar.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\ApplicationPage.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\right\H\hdz\XML\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\hdz\XML\DBPage.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\right\H\hdz\XML\MvcConfigPage.tsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\right\H\hdz\XML\XMLPanelPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\MenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\MenuUserPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewButtonPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewCollectPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewMenuPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewNodePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewOrgPageS.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewUserPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\NewUserRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\rightPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\RoleTr.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\MenuOrg.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\MenuOrgTable.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\NewMenu\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\MenuOrgPage\RightReact\MenuOrgTrailReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\smm\smmTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\BookMark.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgEdit.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgMenu.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\OrgTree.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\Reveal.tsx" />
+    <TypeScriptCompile Include="src\right\H\tool\UserMenuRole.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\grouptreeSava\GroupSavePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\neworgGrouptree\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\wmh\WmhTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\Detail\xbgDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\New\xbgAddPage.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\right\H\xbg\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\Update\xbgUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\xbgGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\xbgGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\H\xbg\xbgTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\Data.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\RightReact\UserRoleHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\RightReact\UserRoleReact.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\UserRole.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\UserRole\UserRoleTable.tsx" />
+    <TypeScriptCompile Include="src\right\H\zhm\zhmTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\H\zyk\zykTestPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Data.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\MenuDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\MenuListPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\New\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\menu\Update\MenuUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\org\Detail\OrgDetailMasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\org\Detail\OrgDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\org\List\OrgListPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightApp.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\GroupOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\NewGroup\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\Group\Save\GroupSavePage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MainDom.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrg.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\MenuOrgTable.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenuOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenuPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewMenu\MenuNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\NewOrgPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuOrgPage\RightReact\MenuOrgTrailReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\MenuUserRole.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\MenuUserRoleTable.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\Popup\AddMenuorButtonPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleButton.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuRoleReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuUserHeadReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\MenuUserRolePage\RightReact\MenuUserReact.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewMaster.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\neworgGrouptree\GroupNewRow.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\RightlinkPage.tsx" />
+    <TypeScriptCompile Include="src\right\rightconfig\RightMainPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Data.tsx" />
+    <TypeScriptCompile Include="src\right\role\detail\RoleDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\role\new\RoleInsertRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\new\RoleNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGrantPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleListPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\RoleRightDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Update\RoleUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\role\Update\RoleUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\data.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\RowDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Detail\UserDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserInsertRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserNewPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\New\UserRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\RowButtonExpand.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdateMaster.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\Update\UserUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserInfoGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserInfo\UserInfoPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\BatchRole\UserManageBatchRolePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Data.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\MasterDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\RoleDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Detail\UserManageDetailPage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserManagerUpdateRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserManageUpdatePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\Update\UserRoleDom.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageGridButtonRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManageGridRow.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserManagePage.tsx" />
+    <TypeScriptCompile Include="src\right\UserManage\UserRightDetailPage.tsx" />
+    <TypeScriptCompile Include="Typings\0Type\Data.d.ts" />
+    <TypeScriptCompile Include="Typings\0Type\Entity.ts" />
+    <TypeScriptCompile Include="Typings\eventemitter2\eventemitter2.d.ts" />
+    <TypeScriptCompile Include="Typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Typings\0Type\Type.d.ts" />
+    <TypeScriptCompile Include="Typings\react\react-dom.d.ts" />
+    <TypeScriptCompile Include="Typings\react\react.d.ts" />
+    <TypeScriptCompile Include="Typings\require\require.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_panels.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\mixins\_panels.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuStyle.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\_yuShu-veriables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\yuShu_b4-reboot.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\scss\b4-reboot.scss">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\_yuShuCore.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShu_atawPlatform.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuHos_atawPlatform.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\akCss\atawPlatform-sass-1.0\yuShuHosStyle.scss" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TypeScript</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>24841</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:24841/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://www.ataw.cn</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <OutputPath>..\..\..\..\Products\_output\Web\Ataw.WebSite\ts\</OutputPath>
+    <TypeScriptJsxEmit>react</TypeScriptJsxEmit>
+    <TypeScriptOutDir>bin</TypeScriptOutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+    <TypeScriptJsxEmit>react</TypeScriptJsxEmit>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <OutputPath>..\..\..\..\Products\_output\Web\Ataw.WebSite\ts\</OutputPath>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutDir>bin</TypeScriptOutDir>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(ProjectDir)bin\*.*" "$(TargetDir)..\..\..\..\..\Products\_output\Web\Ataw.WebSite\ts" /S  /C /Y</PostBuildEvent>
+  </PropertyGroup>
+</Project>
